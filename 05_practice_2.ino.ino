@@ -5,7 +5,7 @@ void setup() {
   pinMode(PIN_LED, OUTPUT);
   count = toggle = 0;
   digitalWrite(PIN_LED, toggle);
-  delay(100);
+  delay(1000);
 }
 
 void loop() {
@@ -13,7 +13,7 @@ void loop() {
   {
     toggle = toggle_state(toggle);
     digitalWrite(PIN_LED, toggle);
-    delay(1000);
+    delay(100);
     count=count+1;
   }
 }
